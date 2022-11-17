@@ -29,8 +29,20 @@ public class EmployeERP extends BaseTest {
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys("888888");
         driver.findElement(By.xpath("//label[@class='control-label']/following-sibling::span[normalize-space()='Office Shift']")).click();
         driver.findElement(By.xpath("//span[@class='select2-search select2-search--dropdown']//input")).sendKeys("Morning Shift",Keys.ENTER);
-    //    driver.findElement(By.xpath(""));
-    //    driver.findElement(By.xpath(""));
+    //    driver.findElement(By.xpath("//span[@class='select2-selection__rendered']//span[normalize-space()='Role']")).click();
+        driver.findElement(By.xpath("//label[@for='role']/following-sibling::span[normalize-space()='Role']")).click();
+        driver.findElement(By.xpath("//span[@class='select2-search select2-search--dropdown']//input")).sendKeys("HR Manager",Keys.ENTER);
+        driver.findElement(By.xpath("//label[@for='department']/following-sibling::span[normalize-space()='Department']")).click();
+        driver.findElement(By.xpath("//span[@class='select2-search select2-search--dropdown']//input")).sendKeys("Training",Keys.ENTER);
+        driver.findElement(By.xpath("//label[@class='form-label']/following-sibling::span[normalize-space()='Designation']")).click();
+
+        driver.findElement(By.xpath("//span[@class='select2-search select2-search--dropdown']//input")).sendKeys("Designation",Keys.ENTER);
+        driver.findElement(By.xpath("//input[@name='basic_salary']")).sendKeys("2000");
+        driver.findElement(By.xpath("//input[@name='hourly_rate']")).sendKeys("30000");
+        driver.findElement(By.xpath("//label[@for='salay_type']/following-sibling::span[normalize-space()='Per Month']")).click();
+        driver.findElement(By.xpath("//span[@class='select2-search select2-search--dropdown']//input")).sendKeys("Per Month",Keys.ENTER);
+
+
 
 
 
